@@ -31,4 +31,4 @@ class SolutionClass(object):
 if __name__ == "__main__":
     arr = [2, 7, 11, 15]
     tar = 9
-    print(SolutionClass().two_sum(arr, tar))
+    print(SolutionClass().twoSum(arr, tar))
