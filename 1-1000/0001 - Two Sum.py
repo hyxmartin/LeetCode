@@ -9,11 +9,11 @@ return [0, 1].
 
 
 class SolutionClass(object):
-    def two_sum(self, nums, target):
+    def twoSum(self, nums, target):
         """
-        :param nums:
-        :param target:
-        :return:
+        :param nums: List[int]
+        :param target: int
+        :return: List[int]
         """
         mapping = {}
 
