@@ -8,27 +8,44 @@ return [0, 1].
 """
 
 
-class SolutionClass(object):
+class SolutionClass1(object):
     def twoSum(self, nums, target):
         """
         :param nums: List[int]
         :param target: int
         :return: List[int]
         """
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums), 1):
+                if nums[j] == target - nums[i]:
+                    return [i, j]
+
+# Space: O(1)
+# Time: O(N^2)
+
+
+class SolutionClassFinal(object):
+    def twoSum(self, nums, target):
+        """
+        :param nums: List[int]
+        :param target: int
+        :return: List[int]
+        saved in a dict[value:pos] and look if a value have saved that equals target - current value
+        if not save into dict
+        if yes return current and the saved position
+        """
         mapping = {}
-
-        for index, val in enumerate(nums):
-            diff = target - val
-            if diff in mapping:
-                return [index, mapping[diff]]
+        for i in range(len(nums)):
+            if target - nums[i] not in mapping:
+                mapping[nums[i]] = i
             else:
-                mapping[val] = index
-
+                return [mapping[target - nums[i]], i]
+        return []
 # Space: O(N)
 # Time: O(N)
 
 
 if __name__ == "__main__":
     arr = [2, 7, 11, 15]
-    tar = 9
-    print(SolutionClass().twoSum(arr, tar))
+    tar = 17
+    print(SolutionClassFinal().twoSum(arr, tar))

@@ -8,5 +8,5 @@ Python solution of problems from [LeetCode](https://leetcode.com/).
 ##### [Problems 1-1000](./1-1000/)
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Two Sum](https://leetcode.com/problems/two-sum/)| [Python](./1-1000/0001-Two_Sum.py)|Medium|
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)| [Python](./1-1000/0001-Two_Sum.py)|Easy|
 
