@@ -26,8 +26,8 @@ class SolutionClassBruteForce:
                     ret = s[i:j]
         return ret
 
-# Space: O(n)
-# Time: O(n^2)
+# Space: O(1)
+# Time: O(n^3)
 
 
 class SolutionClassDynamicProgramming:
@@ -74,7 +74,7 @@ class SolutionClassDynamicProgramming:
         return s[start: start + max]
 
 
-# Space: O(n)
+# Space: O(n^2)
 # Time: O(n^2)
 
 
