@@ -47,8 +47,8 @@ class SolutionClassBruteForce:
                     return False
             print(stack)
         return not stack
-# Space: O()
-# Time: O()
+# Space: O(n)
+# Time: O(n)
 
 
 if __name__ == "__main__":

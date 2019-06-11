@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23f39229-12ce-474a-8e1f-bdd24353d7c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/1-1000/0010-Regular_Expression_Matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/1-1000/0010-Regular_Expression_Matching.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py">
+        <entry file="file://$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state relative-caret-position="293">
+              <caret line="106" column="21" lean-forward="true" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -49,13 +49,15 @@
         <option value="$PROJECT_DIR$/1-1000/9999-csv_parser.py" />
         <option value="$PROJECT_DIR$/1-1000/0010-Regular_Expression_Matching.py" />
         <option value="$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py" />
+        <option value="$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2295" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="472" />
+    <option name="y" value="177" />
     <option name="width" value="960" />
-    <option name="height" value="1008" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -73,6 +75,11 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="1-1000" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -81,7 +88,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -115,7 +122,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +198,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2172" y="0" width="768" height="806" extended-state="0" />
+    <frame x="378" y="142" width="768" height="620" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2103825" />
@@ -199,7 +206,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2237037" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30879346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -230,33 +237,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-1000/0001-Two_Sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-1000/0002-Add_Two_Numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-1000/0039-.py" />
     <entry file="file://$PROJECT_DIR$/1-1000/0336.py" />
     <entry file="file://$PROJECT_DIR$/1-1000/0003-Longest_Substring_Without_Repeating_Characters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-1000/0004-Median_of_Two_Sorted_Arrays.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -283,8 +269,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1-1000/0020-Valid_Parentheses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="649">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1000/0004-Median_of_Two_Sorted_Arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1000/0001-Two_Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1000/0002-Add_Two_Numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1000/0023-Merge_k_Sorted_Lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="106" column="21" lean-forward="true" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
         </state>
       </provider>
     </entry>

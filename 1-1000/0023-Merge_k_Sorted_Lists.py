@@ -1,83 +1,114 @@
 """
-Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
-Example 1:
+Example:
 
-Input: "babad"
-Output: "bab"
-Note: "aba" is also a valid answer.
-Example 2:
-
-Input: "cbbd"
-Output: "bb"
+Input:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+Output: 1->1->2->3->4->4->5->6
 """
+from queue import PriorityQueue
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class LinkedList(object):
+
+    def __init__(self):
+        self.head = None
+        self.size = 0
+
+    # O(1) !!!
+    def insertStart(self, val):
+
+        self.size = self.size + 1
+        newNode = ListNode(val)
+
+        if not self.head:
+            self.head = newNode
+        else:
+            newNode.next = self.head
+            self.head = newNode
+
+    def traverseList(self):
+
+        actualNode = self.head
+
+        while actualNode is not None:
+            print("%d " % actualNode.val)
+            actualNode = actualNode.next
 
 
 class SolutionClassBruteForce:
-    def longestPalindrome(self, s):
+    def mergeKLists(self, list):
         """
-        :param s: String
-        :return: String
+        :param list: List[ListNode]
+        :return: ListNode
         """
-        ret = ''
-        for i in range(len(s)):
-            for j in range(i, len(s), 1):
-                if s[i:j] == s[i:j][::-1] and (j - i > len(ret)):
-                    ret = s[i:j]
-        return ret
+        arr = []
+        for node in list:
+            while node is not None:
+                arr.append(node.val)
+                node = node.next
+        arr.sort()
+        print(arr)
+        for num, i in enumerate(arr):
+            if num == 0:
+                retNode = actNode = ListNode(i)
+                continue
+            actNode.next = ListNode(i)
+            actNode = actNode.next
 
-# Space: O(1)
-# Time: O(n^3)
+        return retNode
+# Space: O()
+# Time: O()
 
 
-class SolutionClassDynamicProgramming:
-    def longestPalindrome(self, s):
+class SolutionClassPriorityQueue(object):
+    def mergeKLists(self, lists):
         """
-        :param s: String
-        :return: String
+        :type lists: List[ListNode]
+        :rtype: ListNode
         """
 
-        max = 1
-        start = 0
-        i = 0
-        table = [[0 for x in range(len(s))] for y in range(len(s))]
+        q = PriorityQueue()
+        for l in lists:
+            q.put((l.val, l))
 
-        # 1 char
-        while i in range(len(s)):
-            table[i][i] = 1
-            max = 1
-            start = i
-            i = i + 1
+        head = point = ListNode(0)
+        while not q.empty():
+            val, node = q.get()
+            point.next = ListNode(val)
+            point = point.next
 
-        i = 0
-        # 2 chars
-        while i in range(len(s) - 1):
-            if s[i] == s[i+1]:
-                table[i][i+1] = 1
-                max = 2
-                start = i
-            i = i + 1
+            if node.next is not None:
+                q.put((node.next.val, node.next))
 
-        # three chars or more
-        k = 3
-        while k <= len(s):
-            i = 0
-            while i <= len(s) - k:
-                j = i + k - 1
-                if s[i] == s[j] and table[i+1][j-1] == 1:
-                    table[i][j] = 1
-                    max = k
-                    start = i
-                i = i + 1
-            k = k + 1
-
-        return s[start: start + max]
-
-
-# Space: O(n^2)
-# Time: O(n^2)
+        return head.next
 
 
 if __name__ == "__main__":
-    s = "baabbaa"
-    print(SolutionClassDynamicProgramming().longestPalindrome(s))
+    l1 = LinkedList()
+    l1.insertStart(5)
+    l1.insertStart(3)
+    l1.insertStart(1)
+    l1.traverseList()
+    print("---")
+    l2 = LinkedList()
+    l2.insertStart(6)
+    l2.insertStart(4)
+    l2.insertStart(2)
+    l2.traverseList()
+    print("---")
+    retNode = SolutionClassPriorityQueue().mergeKLists([l1.head, l2.head])
+    retList = LinkedList()
+    retList.head = retNode
+    retList.traverseList()
